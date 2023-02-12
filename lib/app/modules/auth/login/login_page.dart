@@ -3,6 +3,8 @@ import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
 import 'package:todo_list_provider/app/core/widget/todo_list_logo.dart';
 
+import '../../../core/widget/todo_list_field.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -37,9 +39,9 @@ class LoginPage extends StatelessWidget {
                       child: Form(
                         child: Column(
                           children: [
-                            TextFormField(),
+                            const TodoListField(),
                             const SizedBox(height: 20),
-                            TextFormField(),
+                            const TodoListField(),
                             const SizedBox(height: 10),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
